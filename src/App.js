@@ -8,7 +8,9 @@ import { Container } from "react-bootstrap";
 import MyNavBar from "./components/my-navbar/mynavbar.component";
 import MyCarousal from "./components/my-carousel/my-carousel.component";
 import TitleMessage from "./components/title-message/title-message.component";
-import About from "./pages/about.component";
+import About from "./pages/about/about.component";
+import Slide from "react-reveal/Slide";
+import Skills from "./pages/skills/skills.component";
 
 function App() {
   return (
@@ -33,6 +35,12 @@ function App() {
           </div>
         </Parallax>
       </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <Skills />
+        </Slide>
+      </Container>
     </div>
   );
 }
