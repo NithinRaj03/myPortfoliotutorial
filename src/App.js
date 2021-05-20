@@ -11,6 +11,7 @@ import TitleMessage from "./components/title-message/title-message.component";
 import About from "./pages/about/about.component";
 import Slide from "react-reveal/Slide";
 import Skills from "./pages/skills/skills.component";
+import Experience from "./pages/experience/experience.component";
 
 function App() {
   return (
@@ -41,6 +42,15 @@ function App() {
           <Skills />
         </Slide>
       </Container>
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+            <hr />
+
+            <Experience />
+          </Fade>
+        </Container>
+      </div>
     </div>
   );
 }
