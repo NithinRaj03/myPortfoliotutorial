@@ -12,6 +12,8 @@ import About from "./pages/about/about.component";
 import Slide from "react-reveal/Slide";
 import Skills from "./pages/skills/skills.component";
 import Experience from "./pages/experience/experience.component";
+import TimeLine from "./components/projects-timeline/projects-timeline.component";
+import ContactForm from "./pages/contact-form/contact-form.component";
 
 function App() {
   return (
@@ -51,6 +53,18 @@ function App() {
           </Fade>
         </Container>
       </div>
+      <Container className="container-box rounded">
+        <Slide bottom duration={500}>
+          <hr />
+          <TimeLine />
+        </Slide>
+      </Container>
+      <Container className="container-box rounded">
+        <Fade duration={500}>
+          <hr />
+          <ContactForm />
+        </Fade>
+      </Container>
     </div>
   );
 }
